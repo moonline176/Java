@@ -4,6 +4,9 @@
 #A와 B는 모두 10의 제곱형태이고, 길이는 최대 100자리이다.
 
 num1 = int(input())
-
+cal = input()
 num2 = int(input())
-print()
+if(cal == "*"): 
+    print(num1*num2) 
+else: 
+    print(num1+num2)
