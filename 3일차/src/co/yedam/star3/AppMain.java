@@ -1,4 +1,4 @@
-package co.yedam.star;
+package co.yedam.star3;
 
 public class AppMain {
 
