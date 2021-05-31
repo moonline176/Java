@@ -11,6 +11,42 @@ public class ScoreApp {
 	int eng;
 	int mat;
 	int sum;
+	public int getKor() {
+		return kor;
+	}
+
+	public void setKor(int kor) {
+		this.kor = kor;
+	}
+
+	public int getEng() {
+		return eng;
+	}
+
+	public void setEng(int eng) {
+		this.eng = eng;
+	}
+
+	public int getMat() {
+		return mat;
+	}
+
+	public void setMat(int mat) {
+		this.mat = mat;
+	}
+
+	public void setSum(int sum) {
+		this.sum = sum;
+	}
+
+	public void setAvg(float avg) {
+		this.avg = avg;
+	}
+
+	public void setGrade(char grade) {
+		this.grade = grade;
+	}
+
 	float avg;
 	char grade;
 	
