@@ -27,10 +27,7 @@ public class MemberService {
 	}
 
 	void printMember(int i) {
-		System.out.println(members[i].name);
-		System.out.println(members[i].id);
-		System.out.println(members[i].password);
-		System.out.println(members[i].age);
+			System.out.println(members[i].id+members[i].name+members[i].password+members[i].age);
 	}
 	void printNum() {
 		System.out.println("번호입력>");
