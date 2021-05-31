@@ -36,10 +36,11 @@ public class MemberServiceExample {
 				String id = scanner.next();
 				System.out.println("pw>");
 				String password = scanner.next();
-				System.out.println(app.login(id, password) ? "로그인" : "다시입력");
+				System.out.println(app.login(id,password) ? "로그인되었습니다." : "다시입력"); //로그인 안됨 수정필요
 			} else if (selectNo == 5) {
 				app.printId();
 			} else if (selectNo == 6) {
+				System.out.println("bye");
 				run = false;
 			}
 

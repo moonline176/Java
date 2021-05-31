@@ -11,23 +11,26 @@ public class MemberService {
 	void insert() {
 		System.out.println("id>");
 		String id = scanner.next();
-		System.out.println("pw>");
-		String password = scanner.next();
+		
 		System.out.println("이름>");
 		String name = scanner.next();
+		
+		System.out.println("pw>");
+		String password = scanner.next();
+		
 		System.out.println("나이>");
 		int age = scanner.nextInt();
-		members[cnt++] = new Member(id, password, name, age);
+		members[cnt++] = new Member(id, name, password, age);
 	}
 
 	// 회원리스트
 	void printList() {
 		for (int i = 0; i < cnt; i++)
-			System.out.println(i+members[i].id+members[i].name+members[i].password+members[i].age);
+			System.out.println(i+" "+members[i].id+" "+members[i].name+" "+members[i].password+" "+members[i].age);
 	}
 
 	void printMember(int i) {
-			System.out.println(members[i].id+members[i].name+members[i].password+members[i].age);
+			System.out.println(members[i].id+" "+members[i].name+" "+members[i].password+" "+members[i].age);
 	}
 	void printNum() {
 		System.out.println("번호입력>");
@@ -39,10 +42,10 @@ public class MemberService {
 		}
 	}
 	void printId() {
-		System.out.println("번호입력>");
+		System.out.println("id입력>");
 		String a = scanner.next();
 		for(int i=0; i<cnt; i++) {
-			if (members[i].id.equals(a)) {
+			if ((members[i].id).equals(a)) {
 				printMember(i);
 			}
 		}
