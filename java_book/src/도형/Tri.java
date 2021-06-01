@@ -10,7 +10,6 @@ public class Tri extends Shape implements Drawable{
 	}
 	public void area() {
 		result = (w*h)/2;
-		System.out.println("삼각형넓이: " + result);
 	}
 	@Override
 	public void draw() {
