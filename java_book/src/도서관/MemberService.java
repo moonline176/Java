@@ -32,7 +32,7 @@ public class MemberService implements Service{
 	public void update() {
 		System.out.printf("수정할 이름>");
 		for (int i = 0; i < cnt - 1; i++) {
-			members[i].equals(scanner.next());
+			(members[i].getName()).equals(scanner.next());
 			if (i >= cnt - 1) {
 				System.out.println("없는 이름입니다.");
 				return;
@@ -48,7 +48,7 @@ public class MemberService implements Service{
 	public void delete() {
 		System.out.printf("삭제할 회원>");
 		for (int i = 0; i < cnt - 1; i++) {
-			members[i].equals(scanner.next()); // 문자열 비교 수정필요
+			(members[i].getName()).equals(scanner.next()); // 문자열 비교 수정필요
 			if (i > cnt - 1) {
 				System.out.println("없는 회원입니다.");
 				return;
@@ -74,17 +74,16 @@ public class MemberService implements Service{
 	//단건조회(타이틀)
 	public void selectOne() {
 		System.out.println("조회할 이름>");
-		for (int i = 0; i < cnt+1 ; i++) {
-			if((members[i].getName()).equals(scanner.next())){
-				System.out.println(String.format("이름:%s   전화번호:%s", members[i].getName(), members[i].getPhone()));// 배열에 있는 이름과 비교
-			}
-			else {
+		for (int i = 0; i < cnt ; i++) {
+			(members[i].getName()).equals(scanner.next());
+			if(i >= cnt){
 				System.out.println("없는 회원입니다.");
-				
+				return;
 			}
-			return;	
+			System.out.println(String.format("이름:%s   전화번호:%s", members[i].getName(), members[i].getPhone()));// 배열에 있는 이름과 비교
+			
 		}
-		
+
 	}
 		
 
