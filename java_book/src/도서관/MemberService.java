@@ -102,12 +102,13 @@ public class MemberService implements Service{
 //	public void selectOne() {
 //		System.out.println("조회할 이름>");
 //		for (int i = 0; i < cnt ; i++) {
-//			(members[i].getName()).equals(scanner.next());
-//			if(i >= cnt){
+//			if(members[i].getName()).equals(scanner.next()){
+//				System.out.println(String.format("이름:%s   전화번호:%s", members[i].getName(), members[i].getPhone()));// 배열에 있는 이름과 비교
+//			} else {
 //				System.out.println("없는 회원입니다.");
 //				return;
 //			}
-//			System.out.println(String.format("이름:%s   전화번호:%s", members[i].getName(), members[i].getPhone()));// 배열에 있는 이름과 비교
+//			
 //			
 //		}
 //
