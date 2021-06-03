@@ -21,7 +21,7 @@ public class ListTest {
 		System.out.println("=======================");
 
 		list.remove(0);
-		for (Friend f : list) {
+		for (Friend f : list) { // ':'을 in으로 생각하면 편하다
 			System.out.println(f.getName());
 		}
 

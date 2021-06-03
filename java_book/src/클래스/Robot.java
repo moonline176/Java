@@ -13,6 +13,14 @@ public class Robot {
 	// 기본 생성자
 	//public Robot() { } 		// <-- 컴파일러가 만들어주는 기본 생성자
 	
+	public Robot() {}
+	
+	public Robot(int arm, int leg) {
+		this.arm = arm;		// this는 자기자신 객체를 참조하는 참조변수 
+		this.leg = leg;
+	}
+	
+	
 	public Robot(int arm, int leg, String name) {
 		this.arm = arm;		// this는 자기자신 객체를 참조하는 참조변수 
 		this.leg = leg;
@@ -48,6 +56,19 @@ public class Robot {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		Robot r2 = ((Robot)obj);
+		return ((Robot)obj).arm == this.arm && r2.leg == this.leg;
+	}
+
+	@Override
+	public String toString() {
+		return "arm:" + arm + "leg:"+leg;
+	}
+	
+	
 	
 	
 	
