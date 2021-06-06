@@ -12,7 +12,7 @@ public class 객체배열 {
 		
 		// 변수선언
 		Score[] a;
-		a = new Score[10];
+		a = new Score[10]; //Score[] a = new Score[10];
 		a[0] = new Score("홍길동", 98, 91, 75);
 		a[1] = new Score("김유신", 82, 100, 98);
 		a[2] = new Score("이방지", 70, 72, 87);

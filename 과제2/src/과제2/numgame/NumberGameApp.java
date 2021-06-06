@@ -47,20 +47,20 @@ public class NumberGameApp {
 		}
 	}
 
-//    void regame() {
-//    	while (true) {
-//    	Scanner scanner = new Scanner(System.in);
-//    	System.out.println("다시 하시겠습니까?(y/n)");
-//    	char r = scanner.next().charAt(0);
-//    	if( re == 'Y' || re == 'y') {
-//    		return true;
-//    	} else {
-//    		System.out.println("끝");
-//    		return false;
-//    	}
-//    }
-//    }
-	// "게임을 다시 시작하겠습니까?" y/n 작성 ==> 과제
+	boolean regame() {
+		while (true) {
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("다시 하시겠습니까?(y/n)");
+			char r = scanner.next().charAt(0);
+			if (r == 'Y' || r == 'y') {
+				return false;
+			} else {
+				System.out.println("끝");
+				return true;
+			}
+		}
+	}
+//	 "게임을 다시 시작하겠습니까?" y/n 작성 ==> 과제
 
 	void start() {
 		init();

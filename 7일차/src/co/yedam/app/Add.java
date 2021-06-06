@@ -9,7 +9,7 @@ public class Add {
 			data1 = args[0];
 			data2 = args[1];
 
-			int value1 = Integer.parseInt(data1);  // parseInt():문자열 String타입의 숫자를 int타입으로 변환해줌
+			int value1 = Integer.parseInt(data1);  // Integer.parseInt():문자열 String타입의 숫자를 int타입으로 변환해줌
 			int value2 = Integer.parseInt(data2);
 			System.out.println(value1 / value2);
 		} catch (NumberFormatException e) {

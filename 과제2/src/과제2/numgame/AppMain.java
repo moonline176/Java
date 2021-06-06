@@ -6,10 +6,10 @@ public class AppMain {
 		NumberGameApp ng = new NumberGameApp();
 		while(true) {
 			ng.start();
-			if(ng.confirmStart());
+			if(ng.regame());
 				break;
 		}
-			
+		
 	}
 	
 }

@@ -2,7 +2,6 @@ package co.yedam.app;
 
 import java.util.Scanner;
 
-import sun.tools.tree.ArrayAccessExpression;
 
 public class TryTest1 {
 
@@ -10,7 +9,7 @@ public class TryTest1 {
 		/// NullPointerException
 		try {
 			String s = null;
-			System.out.println(s.charAt(0));
+			System.out.println(s.charAt(0)); //charAt:문자열에서 인자로 주어진 값에 해당하는 문자를 리턴한다.
 		} catch (Exception e) {
 			System.out.println(e.getMessage()); //e.getMessage() : 에러의 원인을 간단하게 출력
 //			e.printStackTrace();

@@ -15,6 +15,7 @@ public class MemberinfoMain {
 		member1.print();
 		member2.print();
 		member3.print();
+		
 	}
 
 }

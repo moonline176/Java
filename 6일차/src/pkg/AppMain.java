@@ -35,7 +35,7 @@ public class AppMain {
 		
 		System.out.println(Count.cnt1+":"+count1.cnt2);
 		System.out.println(Count.cnt1+":"+count2.cnt2);
-		System.out.println(Count.cnt1+":"+count3.cnt2);
-	}//cnt1=3,cnt2=1이 되는이유 ==> p.278
+		System.out.println(Count.cnt1+":"+count3.cnt2); 
+	}//cnt1=3,cnt2=1이 되는이유 ==> p.278 , cnt2는 정적필드로 고정
 
 }

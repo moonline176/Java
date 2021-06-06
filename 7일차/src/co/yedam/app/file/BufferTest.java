@@ -8,7 +8,7 @@ public class BufferTest {
 
 	public static void main(String[] args) {
 		try {
-			BufferedReader fr = new BufferedReader( new FileReader("E:/temp/score.txt"));
+			BufferedReader fr = new BufferedReader(new FileReader("E:/temp/score.txt"));
 			PrintStream out = System.out;
 			String a;
 			while(true) {
